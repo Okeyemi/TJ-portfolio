@@ -21,14 +21,15 @@ const Home =()=> {
       <p className="text-xl md:text-2xl text-gray-300 mb-6">
         A passionate Frontend Developer creating awesome web experiences with modern technologies.
       </p>
-      <a href={cvUrl} download>
       <div className='flex space-x-6'>
+      <a href={cvUrl} target="_blank" rel="noopener noreferrer">
       <motion.button 
         whileHover={{ scale: 1.1 }}
         className="px-4  bg-[#00EEFF] text-sm md:text-base  text-[#1F242D]/80 font-semibold rounded-xl shadow-md hover:bg-blue-300 transition duration-300"
       >
        Download CV
       </motion.button>
+      </a>
       <motion.button 
         whileHover={{ scale: 1.1 }}
         className="px-5  bg-[#00EEFF] text-sm md:text-base  text-[#1F242D]/80 font-semibold rounded-xl shadow-md hover:bg-blue-300 transition duration-300"
@@ -36,7 +37,6 @@ const Home =()=> {
       Portfolio
       </motion.button>
       </div>
-</a>
     </motion.div>
 
     {/* Right Side: Image */}
