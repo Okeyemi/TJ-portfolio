@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-menu-enter {
+    transform: scaleY(0);
+  }
+  .mobile-menu-enter-active {
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .mobile-menu-exit {
+    transform: scaleY(1);
+  }
+  .mobile-menu-exit-active {
+    transform: scaleY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
