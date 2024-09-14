@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
-    <nav className=" text-white p-4 fixed w-full z-10 shadow-md">
+    <nav className=" text-white p-4 fixed w-full z-10 bg-[#1F242D] shadow-sm">
       <div className=" max-w-7xl mx-auto flex justify-between items-center md:px-6">
         <div className="text-2xl font-bold">
           <Link to="/">Okeyemi Creative</Link>
