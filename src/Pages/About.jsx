@@ -39,30 +39,36 @@ const About = () => {
 
         </motion.div>
       </div>
-         {/* Skills Section */}
-        <motion.div
-          className="md:w-1/2 md:ml-10 text-center md:text-left"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <h2 className="text-2xl font-semibold mb-4">Skills</h2>
-          <h2 className="text-3xl font-bold mb-8">Programming Languages</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-xl">JavaScript</h3>
-              </div>
-              <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-xl">HTML & CSS</h3>
-              </div>
-              <div className="bg-gray-100 p-6 rounded-lg shadow-md"></div>
-              </div>
-          
-        
-          <div>
-           
-          </div>
-        </motion.div>
+     {/* Skills Section */}
+<motion.div
+  className="md:w-1/2 md:ml-10 text-center md:text-left text-white"
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1 }}
+>
+  <h2 className="text-3xl text-center font-bold my-8 ">Programming <span className='text-[#00EEFF]'>Languages</span> </h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h3 className="font-bold text-xl text-[#00EEFF]">JavaScript</h3>
+    </div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h3 className="font-bold text-xl text-[#00EEFF]">HTML & CSS</h3>
+    </div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h3 className="font-bold text-xl text-[#00EEFF]">React</h3>
+    </div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h3 className="font-bold text-xl text-[#00EEFF]">VUE JS </h3>
+    </div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h3 className="font-bold text-xl text-[#00EEFF]">Next JS </h3>
+    </div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h3 className="font-bold text-xl text-[#00EEFF]">Typescript</h3>
+    </div>
+  </div>
+</motion.div>
+
     </section>
   );
 };
