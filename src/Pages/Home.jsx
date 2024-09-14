@@ -3,6 +3,7 @@ import HeroImage from '../assets/images/hero.png'
 import Okeyemi from '../assets/images/okeyemi.png'
 
 const Home =()=> {
+  const cvUrl ='https://drive.google.com/file/d/1RhuWqu7VmHYN3tEi3AvBaOTCd8FlIM13/view?usp=sharing'
   return (
 <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${HeroImage})` }}>
   <div className="absolute inset-0 bg-[#1F242D] opacity-85"></div>
@@ -20,6 +21,7 @@ const Home =()=> {
       <p className="text-xl md:text-2xl text-gray-300 mb-6">
         A passionate Frontend Developer creating awesome web experiences with modern technologies.
       </p>
+      <a href={cvUrl} download>
       <div className='flex space-x-6'>
       <motion.button 
         whileHover={{ scale: 1.1 }}
@@ -33,8 +35,8 @@ const Home =()=> {
       >
       Portfolio
       </motion.button>
-
       </div>
+</a>
     </motion.div>
 
     {/* Right Side: Image */}
