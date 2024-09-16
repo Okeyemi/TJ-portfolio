@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Sidebar from './Sidebar';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -11,7 +11,9 @@ const Navbar = () => {
     <nav className=" text-white p-4 fixed w-full z-10 bg-[#1F242D] shadow-sm">
       <div className=" max-w-7xl mx-auto flex justify-between items-center md:px-6">
         <div className="text-2xl font-bold">
-          <Link to="/">Okeyemi Creative</Link>
+          <Link to="/">
+            Okeyemi <span className="text-[#00EEFF]">Creative</span>
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -21,9 +23,6 @@ const Navbar = () => {
           </Link>
           <Link to="/about" className="cursor-pointer hover:text-blue-500">
             About
-          </Link>
-          <Link to="/languages" className="cursor-pointer hover:text-blue-500">
-            Languages
           </Link>
           <Link to="/projects" className="cursor-pointer hover:text-blue-500">
             Projects
