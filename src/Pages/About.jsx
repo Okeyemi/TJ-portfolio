@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import MyPhoto from "../assets/images/my-photo2.jpg";
 
 const About = () => {
+  const cvUrl ='https://drive.google.com/file/d/1RhuWqu7VmHYN3tEi3AvBaOTCd8FlIM13/view?usp=sharing'
+
   return (
     <section className="bg-[#1F242D] text-white min-h-screen py-12 flex flex-col items-center">
       <h1 className="text-2xl md:text-4xl font-bold mb-8 text-center pt-16">
@@ -77,6 +79,34 @@ const About = () => {
           </div>
         </div>
       </motion.div>
+      <motion.div
+        className="w-full px-16 text-center md:text-left text-white "
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h2 className="text-3xl text-center font-bold my-8 ">
+        Educational<span className="text-[#00EEFF]"> Background </span>{" "}
+        </h2>
+        <div className="flex justify-center items-center">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 className="font-bold text-xl text-[#00EEFF]">I hold a degree in Accounting from Moshood Abiola Polytechnic, Ogun state, Nigeria</h3>
+            <div className="flex justify-center my-4">
+            <a href={cvUrl} target="_blank" rel="noopener noreferrer">
+
+            <motion.button 
+        whileHover={{ scale: 1.1 }}
+        className="px-4  bg-[#00EEFF] text-sm md:text-base  text-[#1F242D]/80 font-semibold rounded-xl shadow-md hover:bg-blue-300 transition duration-300"
+      >
+       Download CV
+      </motion.button>
+      </a>
+            </div>
+          </div>
+
+        </div>
+      </motion.div>
+  
     </section>
   );
 };
