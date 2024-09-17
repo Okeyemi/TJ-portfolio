@@ -29,38 +29,31 @@ const Sidebar = ({ isOpen, onClose }) => {
           />
         </svg>
       </button>
-      <div className="flex flex-col items-start justify-center h-full px-4 py-8 space-y-6">
+      <div className="flex flex-col items-start  h-full px-4 py-20 space-y-6">
         <Link
           to="/"
-          className="text-2xl py-2 hover:text-blue-500"
+          className="text-base py-2 hover:text-blue-500"
           onClick={onClose}
         >
           Home
         </Link>
         <Link
           to="/about"
-          className="text-2xl py-2 hover:text-blue-500"
+          className="text-base py-2 hover:text-blue-500"
           onClick={onClose}
         >
           About
         </Link>
         <Link
-          to="/languages"
-          className="text-2xl py-2 hover:text-blue-500"
-          onClick={onClose}
-        >
-          Languages
-        </Link>
-        <Link
           to="/projects"
-          className="text-2xl py-2 hover:text-blue-500"
+          className="text-base py-2 hover:text-blue-500"
           onClick={onClose}
         >
           Projects
         </Link>
         <Link
           to="/contact"
-          className="text-2xl py-2 hover:text-blue-500"
+          className="text-base py-2 hover:text-blue-500"
           onClick={onClose}
         >
           Contact

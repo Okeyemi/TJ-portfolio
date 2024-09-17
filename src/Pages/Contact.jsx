@@ -37,7 +37,7 @@ const Contact = () => {
   
 
   return (
-    <section className="bg-[#1F242D] text-white min-h-screen flex items-center justify-center py-6">
+    <section className="bg-[#1F242D] text-white min-h-screen flex items-center justify-center pt-10">
       <div className="container mx-auto p-6 md:p-12">
         <motion.div
           className="text-center mb-5"
